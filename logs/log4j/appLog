@@ -2,3 +2,41 @@
 2014-11-07 18:56:16.557  INFO com.code.app.AppMain:main(13) - ------
 2014-11-07 18:56:17.324  INFO org.springframework.context.support.ClassPathXmlApplicationContext:prepareRefresh(513) - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@7c24b943: startup date [Fri Nov 07 18:56:17 CST 2014]; root of context hierarchy
 2014-11-07 18:56:17.590  INFO org.springframework.beans.factory.xml.XmlBeanDefinitionReader:loadBeanDefinitions(316) - Loading XML bean definitions from class path resource [applicationContext.xml]
+2014-11-09 09:54:06.330  INFO com.code.app.AppMain:main(13) - ------
+2014-11-09 09:54:07.589  INFO org.springframework.context.support.ClassPathXmlApplicationContext:prepareRefresh(513) - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@1526e3: startup date [Sun Nov 09 09:54:07 CST 2014]; root of context hierarchy
+2014-11-09 09:54:08.037  INFO org.springframework.beans.factory.xml.XmlBeanDefinitionReader:loadBeanDefinitions(316) - Loading XML bean definitions from class path resource [applicationContext.xml]
+2014-11-09 11:06:47.976  INFO com.code.app.AppMain:main(13) - ------
+2014-11-09 11:06:49.525  INFO org.springframework.context.support.ClassPathXmlApplicationContext:prepareRefresh(513) - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@1cdc190: startup date [Sun Nov 09 11:06:49 CST 2014]; root of context hierarchy
+2014-11-09 11:06:49.989  INFO org.springframework.beans.factory.xml.XmlBeanDefinitionReader:loadBeanDefinitions(316) - Loading XML bean definitions from class path resource [applicationContext.xml]
+2014-11-09 11:09:57.787  INFO com.code.app.AppMain:main(13) - ------
+2014-11-09 11:09:58.187  INFO org.springframework.context.support.ClassPathXmlApplicationContext:prepareRefresh(513) - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@5dc268: startup date [Sun Nov 09 11:09:58 CST 2014]; root of context hierarchy
+2014-11-09 11:09:58.401  INFO org.springframework.beans.factory.xml.XmlBeanDefinitionReader:loadBeanDefinitions(316) - Loading XML bean definitions from class path resource [applicationContext.xml]
+2014-11-09 11:12:38.942  INFO com.code.app.AppMain:main(13) - ------
+2014-11-09 11:12:39.358  INFO org.springframework.context.support.ClassPathXmlApplicationContext:prepareRefresh(513) - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@5dc268: startup date [Sun Nov 09 11:12:39 CST 2014]; root of context hierarchy
+2014-11-09 11:12:39.516  INFO org.springframework.beans.factory.xml.XmlBeanDefinitionReader:loadBeanDefinitions(316) - Loading XML bean definitions from class path resource [applicationContext.xml]
+2014-11-09 11:14:54.075  INFO com.code.app.AppMain:main(13) - ------
+2014-11-09 11:14:54.382  INFO org.springframework.context.support.ClassPathXmlApplicationContext:prepareRefresh(513) - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@5dc268: startup date [Sun Nov 09 11:14:54 CST 2014]; root of context hierarchy
+2014-11-09 11:14:54.511  INFO org.springframework.beans.factory.xml.XmlBeanDefinitionReader:loadBeanDefinitions(316) - Loading XML bean definitions from class path resource [applicationContext.xml]
+2014-11-09 11:15:38.242  INFO com.code.app.AppMain:main(13) - ------
+2014-11-09 11:15:38.571  INFO org.springframework.context.support.ClassPathXmlApplicationContext:prepareRefresh(513) - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@5dc268: startup date [Sun Nov 09 11:15:38 CST 2014]; root of context hierarchy
+2014-11-09 11:15:38.696  INFO org.springframework.beans.factory.xml.XmlBeanDefinitionReader:loadBeanDefinitions(316) - Loading XML bean definitions from class path resource [applicationContext.xml]
+2014-11-09 11:17:07.282  INFO com.code.app.AppMain:main(13) - ------
+2014-11-09 11:17:07.693  INFO org.springframework.context.support.ClassPathXmlApplicationContext:prepareRefresh(513) - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@1866417: startup date [Sun Nov 09 11:17:07 CST 2014]; root of context hierarchy
+2014-11-09 11:17:07.841  INFO org.springframework.beans.factory.xml.XmlBeanDefinitionReader:loadBeanDefinitions(316) - Loading XML bean definitions from class path resource [applicationContext.xml]
+2014-11-09 11:23:25.769  INFO com.code.app.AppMain:main(13) - ------
+2014-11-09 11:23:26.130  INFO org.springframework.context.support.ClassPathXmlApplicationContext:prepareRefresh(513) - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@1526e3: startup date [Sun Nov 09 11:23:26 CST 2014]; root of context hierarchy
+2014-11-09 11:23:26.291  INFO org.springframework.beans.factory.xml.XmlBeanDefinitionReader:loadBeanDefinitions(316) - Loading XML bean definitions from class path resource [applicationContext.xml]
+2014-11-09 11:28:26.171  INFO org.springframework.context.support.ClassPathXmlApplicationContext:prepareRefresh(513) - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@e28a61: startup date [Sun Nov 09 11:28:26 CST 2014]; root of context hierarchy
+2014-11-09 11:28:26.377  INFO org.springframework.beans.factory.xml.XmlBeanDefinitionReader:loadBeanDefinitions(316) - Loading XML bean definitions from class path resource [applicationContext.xml]
+2014-11-09 11:40:30.091  INFO com.code.app.AppMain:main(13) - ------
+2014-11-09 11:40:30.438  INFO org.springframework.context.support.ClassPathXmlApplicationContext:prepareRefresh(513) - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@1cdc190: startup date [Sun Nov 09 11:40:30 CST 2014]; root of context hierarchy
+2014-11-09 11:40:30.626  INFO org.springframework.beans.factory.xml.XmlBeanDefinitionReader:loadBeanDefinitions(316) - Loading XML bean definitions from class path resource [applicationContext.xml]
+2014-11-09 11:40:31.947  INFO org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor:initialize(165) - Initializing ExecutorService  'executor'
+2014-11-09 11:40:31.978  INFO org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor:shutdown(203) - Shutting down ExecutorService 'executor'
+2014-11-09 11:41:42.378  INFO com.code.app.AppMain:main(13) - ------
+2014-11-09 11:41:42.783  INFO org.springframework.context.support.ClassPathXmlApplicationContext:prepareRefresh(513) - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@1cdc190: startup date [Sun Nov 09 11:41:42 CST 2014]; root of context hierarchy
+2014-11-09 11:41:42.928  INFO org.springframework.beans.factory.xml.XmlBeanDefinitionReader:loadBeanDefinitions(316) - Loading XML bean definitions from class path resource [applicationContext.xml]
+2014-11-09 11:41:43.922  INFO org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor:initialize(165) - Initializing ExecutorService  'executor'
+2014-11-09 11:41:44.127  INFO org.springframework.scheduling.quartz.SchedulerFactoryBean:<init>(111) - Spring's Quartz 1.x support is deprecated - please upgrade to Quartz 2.0+
+2014-11-09 11:41:44.422  INFO org.springframework.context.support.DefaultLifecycleProcessor:start(341) - Starting beans in phase 2147483647
+2014-11-09 11:41:44.423  INFO org.springframework.scheduling.quartz.SchedulerFactoryBean:startScheduler(649) - Starting Quartz Scheduler now
