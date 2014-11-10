@@ -9,7 +9,7 @@ public class SpringUtil {
 	private static ApplicationContext context;
 	static {
 		context = new ClassPathXmlApplicationContext(
-				"classpath:applicationContext.xml");
+				"classpath:applicationContext-test.xml");
 	}
 	
 	public static Object getBean(String bean){
