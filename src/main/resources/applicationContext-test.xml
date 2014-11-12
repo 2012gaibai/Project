@@ -27,16 +27,23 @@
 		class="org.springframework.scheduling.quartz.SimpleTriggerFactoryBean">
 		<property name="jobDetail" ref="jobtask" />
 		<property name="startDelay" value="1000" />
-		<property name="repeatInterval" value="1000" />
+		<property name="repeatInterval" value="10000" />
 	</bean>
 
-	<bean 
-		class="org.springframework.scheduling.quartz.SchedulerFactoryBean">
+	<bean class="org.springframework.scheduling.quartz.SchedulerFactoryBean">
 		<property name="triggers">
 			<list>
 				<ref bean="doTime" />
 			</list>
 		</property>
+	</bean>
+	<bean id="sendMail" class="org.springframework.mail.javamail.JavaMailSenderImpl">
+		<!-- 邮件服务器地址 -->
+		<property name="host" value="smtp.163.com" />
+		<!-- 登录名 -->
+		<property name="username" value="lottery128@163.com" />
+		<!-- 密码 -->
+		<property name="password" value="lottery128cai" />
 	</bean>
 
 </beans>
