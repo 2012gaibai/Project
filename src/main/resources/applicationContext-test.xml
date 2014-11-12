@@ -30,6 +30,7 @@
 		<property name="repeatInterval" value="10000" />
 	</bean>
 
+
 	<bean class="org.springframework.scheduling.quartz.SchedulerFactoryBean">
 		<property name="triggers">
 			<list>
@@ -45,5 +46,6 @@
 		<!-- 密码 -->
 		<property name="password" value="lottery128cai" />
 	</bean>
+	
 
 </beans>
