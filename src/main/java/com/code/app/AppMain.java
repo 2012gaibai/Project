@@ -13,7 +13,6 @@ public class AppMain {
 		System.out.println("hello");
 		logger.info("------");
 		Mail mail=(Mail) SpringUtil.getBean("mail");
-		mail.mail();
 		
 
 	}
