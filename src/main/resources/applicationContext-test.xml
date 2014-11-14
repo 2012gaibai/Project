@@ -38,7 +38,7 @@
 			</list>
 		</property>
 	</bean>
-	<bean id="sendMail" class="org.springframework.mail.javamail.JavaMailSenderImpl">
+	<bean id="javaMailSender" class="org.springframework.mail.javamail.JavaMailSenderImpl">
 		<!-- 邮件服务器地址 -->
 		<property name="host" value="smtp.163.com" />
 		<!-- 登录名 -->
@@ -46,6 +46,7 @@
 		<!-- 密码 -->
 		<property name="password" value="lottery128cai" />
 	</bean>
-	
+
+
 
 </beans>

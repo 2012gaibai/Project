@@ -1,16 +1,21 @@
 package com.code.job;
 
+import javax.annotation.Resource;
+
 import com.code.service.ISend;
 import com.code.service.SendFactory;
 
 public class EmailJob {
+	@Resource
+	SendFactory sendFactory;
 
 	public void excute() {
+		
 		// System.out.println("---邮件发送-----");
 		ISend iSend = null;
-		iSend = SendFactory.createSend("email");
+		iSend = sendFactory.createSend("email");
 		iSend.Send();
-		iSend = SendFactory.createSend("SMS");
+		iSend = sendFactory.createSend("SMS");
 		iSend.Send();
 	}
 }
