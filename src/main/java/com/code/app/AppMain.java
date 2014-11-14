@@ -2,22 +2,26 @@ package com.code.app;
 
 import org.apache.log4j.Logger;
 
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
 
-import com.code.entity.Mail;
-import com.code.utils.SpringUtil;
 
 public class AppMain {
-	public static Logger logger=Logger.getLogger(AppMain.class);
-	
-	
-	public static void main(String[] args) {
-		System.out.println("hello");
-		logger.info("------");
-		Mail mail=(Mail) SpringUtil.getBean("mail");
-		mail.mail();
+	public static Logger logger = Logger.getLogger(AppMain.class);
 
+
+
+	public static void main(String[] args) {		
+		logger.info("------");
+		init();
+		
+		
 	}
+
+	public static void init() {
+		ApplicationContext context = new ClassPathXmlApplicationContext(
+				"classpath:applicationContext-test.xml");
+	}
+
 }
