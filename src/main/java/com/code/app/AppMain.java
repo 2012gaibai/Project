@@ -20,7 +20,7 @@ public class AppMain {
 
 	public static void main(String[] args) {		
 		logger.info("------");
-		init();
+		//init();
 		//questController.remarkOnQuest();
 		QuestController questController=(QuestController) SpringUtil.getBean("questController");
 		questController.remarkOnQuest();
