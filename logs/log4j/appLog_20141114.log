@@ -1,0 +1,52 @@
+2014-11-14 16:41:39.545  INFO com.code.app.AppMain:main(18) - ------
+2014-11-14 16:42:13.075  INFO com.code.app.AppMain:main(18) - ------
+2014-11-14 16:49:56.075  INFO com.code.app.AppMain:main(18) - ------
+2014-11-14 16:50:11.975  INFO com.code.app.AppMain:main(18) - ------
+2014-11-14 16:50:39.677  INFO com.code.app.AppMain:main(20) - ------
+2014-11-14 16:51:48.631  INFO com.code.app.AppMain:main(18) - ------
+2014-11-14 16:51:48.881  INFO org.springframework.context.support.ClassPathXmlApplicationContext:prepareRefresh(513) - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@93478c8: startup date [Fri Nov 14 16:51:48 CST 2014]; root of context hierarchy
+2014-11-14 16:51:48.989  INFO org.springframework.beans.factory.xml.XmlBeanDefinitionReader:loadBeanDefinitions(316) - Loading XML bean definitions from class path resource [applicationContext-test.xml]
+2014-11-14 16:51:49.976  INFO org.springframework.scheduling.quartz.SchedulerFactoryBean:<init>(111) - Spring's Quartz 1.x support is deprecated - please upgrade to Quartz 2.0+
+2014-11-14 16:51:50.297  INFO org.springframework.context.support.DefaultLifecycleProcessor:start(341) - Starting beans in phase 2147483647
+2014-11-14 16:51:50.298  INFO org.springframework.scheduling.quartz.SchedulerFactoryBean:startScheduler(649) - Starting Quartz Scheduler now
+2014-11-14 17:46:01.851  INFO com.code.app.AppMain:main(19) - ------
+2014-11-14 17:46:02.101  INFO org.springframework.context.support.ClassPathXmlApplicationContext:prepareRefresh(513) - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@53e59730: startup date [Fri Nov 14 17:46:02 CST 2014]; root of context hierarchy
+2014-11-14 17:46:02.222  INFO org.springframework.beans.factory.xml.XmlBeanDefinitionReader:loadBeanDefinitions(316) - Loading XML bean definitions from class path resource [applicationContext-test.xml]
+2014-11-14 17:46:03.082  INFO org.springframework.scheduling.quartz.SchedulerFactoryBean:<init>(111) - Spring's Quartz 1.x support is deprecated - please upgrade to Quartz 2.0+
+2014-11-14 17:46:03.409  INFO org.springframework.context.support.DefaultLifecycleProcessor:start(341) - Starting beans in phase 2147483647
+2014-11-14 17:46:03.410  INFO org.springframework.scheduling.quartz.SchedulerFactoryBean:startScheduler(649) - Starting Quartz Scheduler now
+2014-11-14 17:46:16.413  INFO com.code.app.AppMain:main(19) - ------
+2014-11-14 17:46:32.284  INFO com.code.app.AppMain:main(19) - ------
+2014-11-14 17:47:21.405  INFO org.springframework.context.support.ClassPathXmlApplicationContext:prepareRefresh(513) - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@41eea016: startup date [Fri Nov 14 17:47:21 CST 2014]; root of context hierarchy
+2014-11-14 17:47:21.482  INFO org.springframework.beans.factory.xml.XmlBeanDefinitionReader:loadBeanDefinitions(316) - Loading XML bean definitions from class path resource [applicationContext-test.xml]
+2014-11-14 17:47:22.150  INFO org.springframework.scheduling.quartz.SchedulerFactoryBean:<init>(111) - Spring's Quartz 1.x support is deprecated - please upgrade to Quartz 2.0+
+2014-11-14 17:47:22.462  INFO org.springframework.context.support.DefaultLifecycleProcessor:start(341) - Starting beans in phase 2147483647
+2014-11-14 17:47:22.463  INFO org.springframework.scheduling.quartz.SchedulerFactoryBean:startScheduler(649) - Starting Quartz Scheduler now
+2014-11-14 17:47:22.469  INFO com.code.app.AppMain:main(23) - ------
+2014-11-14 17:47:43.660  INFO org.springframework.context.support.ClassPathXmlApplicationContext:prepareRefresh(513) - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@3e5a0cf: startup date [Fri Nov 14 17:47:43 CST 2014]; root of context hierarchy
+2014-11-14 17:47:43.726  INFO org.springframework.beans.factory.xml.XmlBeanDefinitionReader:loadBeanDefinitions(316) - Loading XML bean definitions from class path resource [applicationContext-test.xml]
+2014-11-14 17:47:44.327  INFO org.springframework.scheduling.quartz.SchedulerFactoryBean:<init>(111) - Spring's Quartz 1.x support is deprecated - please upgrade to Quartz 2.0+
+2014-11-14 17:47:44.584  INFO org.springframework.context.support.DefaultLifecycleProcessor:start(341) - Starting beans in phase 2147483647
+2014-11-14 17:47:44.584  INFO org.springframework.scheduling.quartz.SchedulerFactoryBean:startScheduler(649) - Starting Quartz Scheduler now
+2014-11-14 17:47:44.587  INFO com.code.app.AppMain:main(23) - ------
+2014-11-14 17:49:11.294  INFO org.springframework.context.support.ClassPathXmlApplicationContext:prepareRefresh(513) - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@14885a61: startup date [Fri Nov 14 17:49:11 CST 2014]; root of context hierarchy
+2014-11-14 17:49:11.360  INFO org.springframework.beans.factory.xml.XmlBeanDefinitionReader:loadBeanDefinitions(316) - Loading XML bean definitions from class path resource [applicationContext-test.xml]
+2014-11-14 17:49:11.728  INFO org.springframework.beans.factory.support.DefaultListableBeanFactory:registerBeanDefinition(749) - Overriding bean definition for bean 'mail': replacing [Generic bean: class [com.code.entity.Mail]; scope=singleton; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in file [D:\workspace\Project\target\classes\com\code\entity\Mail.class]] with [Generic bean: class [com.code.entity.Mail]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [applicationContext-test.xml]]
+2014-11-14 17:49:11.939  INFO org.springframework.scheduling.quartz.SchedulerFactoryBean:<init>(111) - Spring's Quartz 1.x support is deprecated - please upgrade to Quartz 2.0+
+2014-11-14 17:49:12.203  INFO org.springframework.context.support.DefaultLifecycleProcessor:start(341) - Starting beans in phase 2147483647
+2014-11-14 17:49:12.203  INFO org.springframework.scheduling.quartz.SchedulerFactoryBean:startScheduler(649) - Starting Quartz Scheduler now
+2014-11-14 17:49:12.207  INFO com.code.app.AppMain:main(23) - ------
+2014-11-14 17:54:23.230  INFO org.springframework.context.support.ClassPathXmlApplicationContext:prepareRefresh(513) - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@40fb2f19: startup date [Fri Nov 14 17:54:23 CST 2014]; root of context hierarchy
+2014-11-14 17:54:23.301  INFO org.springframework.beans.factory.xml.XmlBeanDefinitionReader:loadBeanDefinitions(316) - Loading XML bean definitions from class path resource [applicationContext-test.xml]
+2014-11-14 17:54:23.665  INFO org.springframework.beans.factory.support.DefaultListableBeanFactory:registerBeanDefinition(749) - Overriding bean definition for bean 'mail': replacing [Generic bean: class [com.code.entity.Mail]; scope=singleton; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in file [D:\workspace\Project\target\classes\com\code\entity\Mail.class]] with [Generic bean: class [com.code.entity.Mail]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [applicationContext-test.xml]]
+2014-11-14 17:54:23.893  INFO org.springframework.scheduling.quartz.SchedulerFactoryBean:<init>(111) - Spring's Quartz 1.x support is deprecated - please upgrade to Quartz 2.0+
+2014-11-14 17:54:24.148  INFO org.springframework.context.support.DefaultLifecycleProcessor:start(341) - Starting beans in phase 2147483647
+2014-11-14 17:54:24.148  INFO org.springframework.scheduling.quartz.SchedulerFactoryBean:startScheduler(649) - Starting Quartz Scheduler now
+2014-11-14 17:54:24.151  INFO com.code.app.AppMain:main(22) - ------
+2014-11-14 17:57:47.045  INFO com.code.app.AppMain:main(16) - ------
+2014-11-14 17:57:47.234  INFO org.springframework.context.support.ClassPathXmlApplicationContext:prepareRefresh(513) - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@37b7a8c5: startup date [Fri Nov 14 17:57:47 CST 2014]; root of context hierarchy
+2014-11-14 17:57:47.307  INFO org.springframework.beans.factory.xml.XmlBeanDefinitionReader:loadBeanDefinitions(316) - Loading XML bean definitions from class path resource [applicationContext-test.xml]
+2014-11-14 17:57:47.693  INFO org.springframework.beans.factory.support.DefaultListableBeanFactory:registerBeanDefinition(749) - Overriding bean definition for bean 'mail': replacing [Generic bean: class [com.code.entity.Mail]; scope=singleton; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in file [D:\workspace\Project\target\classes\com\code\entity\Mail.class]] with [Generic bean: class [com.code.entity.Mail]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [applicationContext-test.xml]]
+2014-11-14 17:57:47.935  INFO org.springframework.scheduling.quartz.SchedulerFactoryBean:<init>(111) - Spring's Quartz 1.x support is deprecated - please upgrade to Quartz 2.0+
+2014-11-14 17:57:48.221  INFO org.springframework.context.support.DefaultLifecycleProcessor:start(341) - Starting beans in phase 2147483647
+2014-11-14 17:57:48.222  INFO org.springframework.scheduling.quartz.SchedulerFactoryBean:startScheduler(649) - Starting Quartz Scheduler now
