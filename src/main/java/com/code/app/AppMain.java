@@ -16,7 +16,6 @@ public class AppMain {
 	public static Logger logger = Logger.getLogger(AppMain.class);
 
 
-	
 
 	public static void main(String[] args) {		
 		logger.info("------");

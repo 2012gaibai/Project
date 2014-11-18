@@ -11,13 +11,24 @@
 		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-4.0.xsd
 		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.0.xsd">
 
-	
-	
+
+
 
 	<bean id="questController" class="com.code.controller.QuestController">
 		<constructor-arg ref="quest" />
 	</bean>
 
 	<bean id="quest" class="com.code.service.impl.QuestImpl" />
+
+	<bean id="minstrel" class="com.code.service.impl.Minstrel" />
+
+	<aop:config>
+		<aop:aspect ref="minstrel">
+			<aop:pointcut expression="execution(* *.embarkOnQuest(..))"
+				id="emark" />
+			<aop:before pointcut-ref="emark" method="beforeQuest" />
+			<aop:after pointcut-ref="emark" method="afterQuest" />
+		</aop:aspect>
+	</aop:config>
 
 </beans>
