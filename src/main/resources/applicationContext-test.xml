@@ -47,6 +47,12 @@
 		<property name="password" value="lottery128cai" />
 	</bean>
 
+	<bean id="questController" class="com.code.controller.QuestController">
+		<constructor-arg ref="quest" />
+	</bean>
+	
+	<bean id="quest" class="com.code.service.impl.QuestImpl" />
+
 
 
 </beans>
