@@ -52,7 +52,8 @@
 	</bean>
 	
 	<bean id="quest" class="com.code.service.impl.QuestImpl" />
-
+	
+	<bean id="" class=""/>
 
 
 </beans>
