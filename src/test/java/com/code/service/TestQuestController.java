@@ -1,7 +1,6 @@
 package com.code.service;
 
-import org.junit.Before;
-import org.junit.Test;
+
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
@@ -21,12 +20,12 @@ public class TestQuestController {
 
 	private ApplicationContext context;
 	
-	@Before
+	
 	public void setUp(){
 		context=new ClassPathXmlApplicationContext("classpath:applicationContext-test.xml");
 	}
 	
-	@Test
+	
 	public void testRemarkOnQuest() {
 		QuestController questController = (QuestController) context
 				.getBean("questController");
