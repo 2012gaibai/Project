@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.0.xsd">
+
+
+	<!-- 声明一个简单bean -->
+	<bean id="duke1" class="org.code.service.impl.Juggler" />
+	
+	<!-- 通过setter方法注入对象引用 -->
+	<bean id="singer" class="org.code.service.impl.Singer">
+		<property name="name" value="羽泉" />
+		<property name="singenum" value="300" />
+		<property name="performer" ref="duke1" />
+	</bean>
+	
+	<!-- 通过构造器注入 -->
+	<bean id="duke2" class="org.code.service.impl.Juggler">
+		<constructor-arg type="int" value="15" />
+	</bean>
+	
+	<!-- 通过构造器注入对象引用 -->
+	<bean id="sonnet18" class="org.code.service.impl.Sonnet18" />
+
+	<bean id="duke3" class="org.code.service.impl.PoeticJuggler">
+		<constructor-arg value="18" />
+		<constructor-arg ref="sonnet18" />
+	</bean>
+	<!-- 通过工厂方法创建bean -->
+	<bean id="theStage" class="org.code.service.Stage" factory-method="getInstance"/>
+	
+</beans>
