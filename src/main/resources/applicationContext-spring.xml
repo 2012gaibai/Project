@@ -1,24 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.0.xsd">
 
 
 	<!-- 声明一个简单bean -->
 	<bean id="duke1" class="org.code.service.impl.Juggler" />
-	
+
 	<!-- 通过setter方法注入对象引用 -->
 	<bean id="singer" class="org.code.service.impl.Singer">
 		<property name="name" value="羽泉" />
 		<property name="singenum" value="300" />
 		<property name="performer" ref="duke1" />
 	</bean>
-	
+	<!-- 内部bean -->
+	<bean id="singer1" class="org.code.service.impl.Singer">
+		<property name="name" value="张宇" />
+		<property name="singenum" value="300" />
+		<property name="performer">
+			<bean class="org.code.service.impl.Juggler"></bean>
+		</property>
+	</bean>
+	<!-- 命名空间p -->
+	<bean id="singer2" class="org.code.service.impl.Singer" p:name="邓紫棋"
+		p:singenum="20" p:performer-ref="duke1" />
 	<!-- 通过构造器注入 -->
 	<bean id="duke2" class="org.code.service.impl.Juggler">
 		<constructor-arg type="int" value="15" />
 	</bean>
-	
+
 	<!-- 通过构造器注入对象引用 -->
 	<bean id="sonnet18" class="org.code.service.impl.Sonnet18" />
 
@@ -26,7 +36,36 @@
 		<constructor-arg value="18" />
 		<constructor-arg ref="sonnet18" />
 	</bean>
+
 	<!-- 通过工厂方法创建bean -->
-	<bean id="theStage" class="org.code.service.Stage" factory-method="getInstance"/>
+	<bean id="theStage" class="org.code.service.Stage" factory-method="getInstance" />
+
+	<!-- 初始化方法和销毁方法 -->
+	<bean id="auditorium" class="org.code.service.impl.Auditorium"
+		init-method="turnOnLights" destroy-method="turnOffLights" />
+
+	<bean id="hank" class="org.code.service.impl.OneManBand">
+		<property name="instruments">
+			<list>
+				<ref bean="guitar" />
+				<ref bean="cymbal" />
+				<ref bean="harmonica" />
+			</list>
+		</property>
+	</bean>
+	<bean id="hank1" class="org.code.service.impl.OneManBand">
+		<property name="instruments">
+			<set>
+				<ref bean="guitar" />
+				<ref bean="cymbal" />
+				<ref bean="harmonica" />
+				<ref bean="harmonica" />
+			</set>
+		</property>
+	</bean>
 	
+	<bean id="guitar" class="org.code.service.impl.Guitar" />
+	<bean id="cymbal" class="org.code.service.impl.Cymbal" />
+	<bean id="harmonica" class="org.code.service.impl.Harmonica" />
+
 </beans>
