@@ -16,3 +16,5 @@
 2014-11-25 16:45:49.721  INFO org.springframework.beans.factory.xml.XmlBeanDefinitionReader:loadBeanDefinitions(316) - Loading XML bean definitions from class path resource [applicationContext-spring.xml]
 2014-11-25 16:46:07.644  INFO org.springframework.context.support.ClassPathXmlApplicationContext:prepareRefresh(513) - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@1a1afa94: startup date [Tue Nov 25 16:46:07 CST 2014]; root of context hierarchy
 2014-11-25 16:46:07.710  INFO org.springframework.beans.factory.xml.XmlBeanDefinitionReader:loadBeanDefinitions(316) - Loading XML bean definitions from class path resource [applicationContext-spring.xml]
+2014-11-25 17:14:19.628  INFO org.springframework.context.support.ClassPathXmlApplicationContext:prepareRefresh(513) - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@1a1afa94: startup date [Tue Nov 25 17:14:19 CST 2014]; root of context hierarchy
+2014-11-25 17:14:19.691  INFO org.springframework.beans.factory.xml.XmlBeanDefinitionReader:loadBeanDefinitions(316) - Loading XML bean definitions from class path resource [applicationContext-spring.xml]
