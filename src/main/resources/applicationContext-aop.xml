@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:jpa="http://www.springframework.org/schema/data/jpa" xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:jdbc="http://www.springframework.org/schema/jdbc"
+	xsi:schemaLocation="http://www.springframework.org/schema/jdbc http://www.springframework.org/schema/jdbc/spring-jdbc-4.0.xsd
+		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.0.xsd
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+		http://www.springframework.org/schema/data/jpa http://www.springframework.org/schema/data/jpa/spring-jpa-1.3.xsd
+		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-4.0.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.0.xsd">
+
+	<bean id="audience" class="org.aop.service.impl.Audience" />
+	<bean id="hank" class="org.aop.service.impl.Harmonica" />
+
+	<aop:config>
+		<aop:aspect ref="audience">
+			<aop:pointcut id="singer"
+				expression="execution(* org.aop.service.Instrument.play(..))" />
+			<!-- <aop:before pointcut-ref="singer" method="takeSeats" />
+			<aop:before pointcut-ref="singer" method="turnOffCellPhones" />
+			<aop:after pointcut-ref="singer" method="applaud" />
+			<aop:after-returning pointcut-ref="singer" method="leave"/>
+			<aop:after-throwing pointcut-ref="singer" method="demandRefund" /> -->
+		</aop:aspect>
+	</aop:config>
+</beans>
