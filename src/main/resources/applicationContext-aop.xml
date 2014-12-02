@@ -11,18 +11,28 @@
 		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-4.0.xsd
 		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.0.xsd">
 
+    <context:component-scan base-package="org.aop"/>
 	<bean id="audience" class="org.aop.service.impl.Audience" />
 	<bean id="hank" class="org.aop.service.impl.Harmonica" />
 
+	<!-- <aop:config> <aop:aspect ref="audience"> <aop:pointcut id="singer" 
+		expression="execution(* org.aop.service.Instrument.play(..))" /> <aop:around 
+		pointcut-ref="singer" method="waitTime" /> <aop:before pointcut-ref="singer" 
+		method="takeSeats" /> <aop:before pointcut-ref="singer" method="turnOffCellPhones" 
+		/> <aop:after pointcut-ref="singer" method="applaud" /> <aop:after-returning 
+		pointcut-ref="singer" method="leave" /> <aop:after-throwing pointcut-ref="singer" 
+		method="demandRefund" /> </aop:aspect> </aop:config> -->
+
+	<bean id="thinker" class="org.aop.service.impl.Volunteer" />
+	<bean id="magician" class="org.aop.service.impl.Magician" />
+
 	<aop:config>
-		<aop:aspect ref="audience">
-			<aop:pointcut id="singer"
-				expression="execution(* org.aop.service.Instrument.play(..))" />
-			<!-- <aop:before pointcut-ref="singer" method="takeSeats" />
-			<aop:before pointcut-ref="singer" method="turnOffCellPhones" />
-			<aop:after pointcut-ref="singer" method="applaud" />
-			<aop:after-returning pointcut-ref="singer" method="leave"/>
-			<aop:after-throwing pointcut-ref="singer" method="demandRefund" /> -->
+		<aop:aspect ref="magician">
+			<aop:pointcut
+				expression="execution(* org.aop.service.Thinker.thinkOfSomeThing(String)) and args(thoughts)"
+				id="thinking" />
+			<aop:before method="interceptThroughts" pointcut-ref="thinking"
+				arg-names="thoughts" />
 		</aop:aspect>
 	</aop:config>
 </beans>

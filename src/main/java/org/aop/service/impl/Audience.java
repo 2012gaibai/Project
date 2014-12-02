@@ -25,6 +25,19 @@ public class Audience {
 	}
 	
 	public void waitTime(ProceedingJoinPoint joinPoint){
+		try {
+			System.out.println("take seats!");
+			System.out.println("turn off your phone!");
+			
+			long start=System.currentTimeMillis();
+			joinPoint.proceed();
+			long end=System.currentTimeMillis();
+			
+			System.out.println("欢呼欢呼！");
+			System.out.println("演出花费多长时间"+(end-start)+"milliSeconds");
 		
+		} catch (Throwable e) {
+			System.out.println("演出失败！");
+		}
 	}
 }
