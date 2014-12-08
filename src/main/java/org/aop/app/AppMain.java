@@ -24,7 +24,7 @@ public class AppMain {
 		Thinker thinker=(Thinker) context.getBean("thinker");
 		MindReader mindReader=(MindReader) context.getBean("magician");
 		thinker.thinkOfSomeThing("喊喊");
-		//System.out.println(mindReader.getThoughts());
+		System.out.println(mindReader.getThoughts());
 		
 	}
 }
